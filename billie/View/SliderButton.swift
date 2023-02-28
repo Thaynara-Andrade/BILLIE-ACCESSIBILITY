@@ -163,12 +163,12 @@ struct SwipeButton: View {
                     RoundedRectangle(cornerRadius: 60, style: .circular)
                 })
                 .overlay(alignment: .trailing) {
-                    Image(systemName: "ruler").font(.custom( "grande", size: 50))
+                    Image(systemName: "arrowshape.right").font(.custom( "grande", size: 50))
                         .foregroundColor(.white)
                         .padding()
                         .opacity(self.sucess ? 0 : 1)
                     
-                    Image(systemName: "ruler.fill").font(.custom( "grande", size: 50))
+                    Image(systemName: "arrowshape.right.fill").font(.custom( "grande", size: 50))
                         .foregroundColor(.white)
                         .padding()
                         .opacity(self.sucess ? 1 : 0)
