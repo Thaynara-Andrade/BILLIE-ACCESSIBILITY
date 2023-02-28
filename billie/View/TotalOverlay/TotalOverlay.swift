@@ -17,14 +17,12 @@ struct TotalOverlay: View {
         VStack(alignment: .leading) {
             Group {
                 HStack{
-                    Image(systemName: "person.fill")
                     Text("Total")
                     Spacer()
                     Text(sumTotalPrice, format: .currency(code: itemModel.localeCode))
                 }
                 .font(.TotalOverlayFont)
                 HStack{
-                    Image(systemName: "dollarsign.circle")
                     Text("10% Tip")
                     Spacer()
                     Text(sumTotalPrice*0.1, format: .currency(code: itemModel.localeCode))
