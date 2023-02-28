@@ -22,7 +22,7 @@ Esse repositório tem o intuito de trazer a versão do Billie de forma acessíve
 ## Responsáveis por alterações de acessibilidade
 
 - [@ThaynaraAndrade](https://github.com/Thaynara-Andrade)
-- [@Marília de Sousa]
+- [@Marília de Sousa](https://github.com/maahdisousa)
 - [@Raina Rodrigues](https://github.com/rainarodrigues)
 
 
