@@ -24,6 +24,7 @@ struct TotalOverlay: View {
                 .font(.TotalOverlayFont)
                 HStack{
                     Text("10% Tip")
+                        .font(.body)
                     Spacer()
                     Text(sumTotalPrice*0.1, format: .currency(code: itemModel.localeCode))
                 }
