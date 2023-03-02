@@ -28,7 +28,7 @@ struct ItemBillCell: View {
                     } else {
                         Text(itemModel.name)
                             .font(.nameCellFont)
-                            .lineLimit(1)
+//                            .lineLimit(1)
                     }
                     
                     if !itemModel.isEditing{
@@ -84,7 +84,7 @@ struct ItemBillCell: View {
         TextField("Edit name", text: $itemModel.name)
             .textFieldStyle(.roundedBorder)
             .font(.nameCellFont)
-            .lineLimit(1)
+//            .lineLimit(1)
             .focused($field, equals: .name)
     }
     
