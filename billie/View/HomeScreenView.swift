@@ -27,10 +27,12 @@ struct HomeScreenView: View {
                     let impactGen = UIImpactFeedbackGenerator(style: .medium)
                     impactGen.impactOccurred()
                 }.buttonStyle(scanButton(isEnded: isEnded))
+                    .accessibilityLabel("Fazer o escaner da nota fiscal")
                 
                 Button("") {
                     isRecognized.toggle()
                 }.buttonStyle(manualEnterButton(isEnded: isEnded))
+                    .accessibilityLabel("Digitar manualmente os dados da nota fiscal")
                 
             }
             .toolbar {
@@ -42,6 +44,7 @@ struct HomeScreenView: View {
                             .foregroundColor(Color.white)
                             .font(Font.body)
                             .padding(.all, 10)
+                            .accessibilityLabel("Deseja saber como o App funciona?")
                     }.alert(isPresented: $alertHelpButton) {
                         Alert(title: Text("Let me help you 😃"),
                               message: Text("You can use Billie to scan you table's receipt, edit the itens or values captured by the scan (in case you need to), add up your share of the expenses, and send the payment to the restaurant."),
