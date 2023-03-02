@@ -19,7 +19,6 @@ struct TotalOverView: View {
             VStack(alignment: .leading) {
                 Group {
                     HStack{
-                        Image(systemName: "person.fill")
                         Text("Total")
                         Spacer()
                         Text("R$ \(totalPrice, specifier: "%.2f")")
