@@ -30,6 +30,7 @@
 		4943E16A28DE320800803CB7 /* LottieSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943E16928DE320800803CB7 /* LottieSuccessView.swift */; };
 		4974503328E5D54300CCC8D8 /* PickerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974503228E5D54300CCC8D8 /* PickerRowView.swift */; };
 		4974503528E5D57300CCC8D8 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974503428E5D57300CCC8D8 /* PaymentView.swift */; };
+		49E32BBB29A02ACD004D4E59 /* PaymentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */; };
 		7E1A7A9628E22E0B00C61FD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A7A9528E22E0B00C61FD6 /* Extensions.swift */; };
 		7E1A7A9828E34E6C00C61FD6 /* ItemBillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A7A9728E34E6C00C61FD6 /* ItemBillCell.swift */; };
 		7E1A7A9A28E3664000C61FD6 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A7A9928E3664000C61FD6 /* ItemListView.swift */; };
@@ -89,6 +90,7 @@
 		4943E16928DE320800803CB7 /* LottieSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSuccessView.swift; sourceTree = "<group>"; };
 		4974503228E5D54300CCC8D8 /* PickerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerRowView.swift; sourceTree = "<group>"; };
 		4974503428E5D57300CCC8D8 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectView.swift; sourceTree = "<group>"; };
 		7E1A7A9528E22E0B00C61FD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7E1A7A9728E34E6C00C61FD6 /* ItemBillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBillCell.swift; sourceTree = "<group>"; };
 		7E1A7A9928E3664000C61FD6 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
@@ -208,13 +210,14 @@
 				2913F17F28D21B9F000CE54F /* SliderButton.swift */,
 				7E26326928D7C4F600FD049B /* ActionButton.swift */,
 				4974503228E5D54300CCC8D8 /* PickerRowView.swift */,
-				4974503428E5D57300CCC8D8 /* PaymentView.swift */,
 				1D89BCB628D21BA800357248 /* LottieView.swift */,
 				4943E16928DE320800803CB7 /* LottieSuccessView.swift */,
 				29EF982B28CF7AEB0000E300 /* BillListRow.swift */,
-				2913F17D28D0C4E1000CE54F /* BillListView.swift */,
 				7EECF22B28E1E5B6005AF6E7 /* CheckoutView.swift */,
+				2913F17D28D0C4E1000CE54F /* BillListView.swift */,
 				7E26326F28D8FDE500FD049B /* TotalOverView.swift */,
+				4974503428E5D57300CCC8D8 /* PaymentView.swift */,
+				49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				2969FCE128CA13D6009FBB4F /* TextItemModel.swift in Sources */,
 				1D89BCB728D21BA800357248 /* LottieView.swift in Sources */,
 				29EF982C28CF7AEB0000E300 /* BillListRow.swift in Sources */,
+				49E32BBB29A02ACD004D4E59 /* PaymentSelectView.swift in Sources */,
 				2913F17A28D0B40D000CE54F /* RegexBuilder.swift in Sources */,
 				1D55FFD028ECB3E30069F735 /* RecognizedContentModel.swift in Sources */,
 				7EECF22C28E1E5B6005AF6E7 /* CheckoutView.swift in Sources */,
