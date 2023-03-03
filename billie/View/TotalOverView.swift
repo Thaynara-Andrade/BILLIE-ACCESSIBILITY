@@ -42,9 +42,9 @@ struct TotalOverView: View {
             .ignoresSafeArea(.keyboard)
             .padding(.all, 20)
             Rectangle()
-                .cornerRadius(25)
+                //.cornerRadius(25)
                 .foregroundColor(colorScheme == .light ? Color(UIColor.white): Color(UIColor.systemGray6) )
-                .shadow(radius: 4)
+                //.shadow(radius: 4)
                 .zIndex(-1)
         }
         .frame(height: UIScreen.main.bounds.height/9)
