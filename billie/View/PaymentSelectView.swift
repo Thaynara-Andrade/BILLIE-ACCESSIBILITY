@@ -17,8 +17,6 @@ struct PaymentSelectView: View {
     @Binding var shouldPop: Bool
     
     var body: some View {
-        let actionColor = Color.red
-        let accentColor = Color.blue
         
         ZStack(alignment: .center) {
             VStack(alignment: .leading) {
@@ -46,13 +44,13 @@ struct PaymentSelectView: View {
                                         .padding(.vertical, 12)
                                         .foregroundColor(Color.white)
                                         .frame(maxWidth: .infinity)
-                                        .background (selectedIndex >  0  ?  Color (UIColor.gray ) :  Color (UIColor.systemCyan))
+                                        .background(selectedIndex >  0  ?  Color (UIColor.gray ) :  Color.actionColor)
                                         .cornerRadius(5)
-                    }
+                       // static let actionColor = Color(red: 36/255, green: 123/255, blue: 160/255)
+                    } 
                 }
                 
             }.padding(.all, 20)
-
         }
     }
     
