@@ -89,7 +89,8 @@ struct manualEnterButton: ButtonStyle {
                 .scaleEffect(configuration.isPressed ? 0.8: 1)
                 .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
                 .foregroundColor(colorScheme == .dark ? .white:
-                                                Color.actionColor)
+                        .white)
+                
                 .padding(.all, 12)
                 .padding([.leading,.trailing])
                 .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(.blue).opacity(isEnded ? 03 :0).animation(.easeOut(duration: 0.2), value: isEnded)

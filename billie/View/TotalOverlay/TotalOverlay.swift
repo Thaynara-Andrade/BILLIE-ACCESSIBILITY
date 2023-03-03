@@ -21,14 +21,20 @@ struct TotalOverlay: View {
                     Spacer()
                     Text(sumTotalPrice, format: .currency(code: itemModel.localeCode))
                 }
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel("Total" + String(sumTotalPrice))
                 .font(.TotalOverlayFont)
                 HStack{
                     Text("10% Tip")
+                        .font(.body)
                     Spacer()
                     Text(sumTotalPrice*0.1, format: .currency(code: itemModel.localeCode))
                 }
                 .foregroundColor(.secondary)
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel("10% de gorjeta," + String(sumTotalPrice*0.1))
             }
+           
             SliderButton(success: $slideSuceeded)
                 .scenePadding([.top])
         }
