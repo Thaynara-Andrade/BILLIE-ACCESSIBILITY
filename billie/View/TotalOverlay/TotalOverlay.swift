@@ -42,10 +42,10 @@ struct TotalOverlay: View {
     }
 }
 
-//struct TotalOverlay_Previews: PreviewProvider {
-//    
-//    static var previews: some View {
-//        
-//        TotalOverlay(sumTotalPrice: 20, slideSuceeded: .constant(false))
-//    }
-//}
+struct TotalOverlay_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        
+        TotalOverlay(sumTotalPrice: 20, slideSuceeded: .constant(false))
+    }
+}

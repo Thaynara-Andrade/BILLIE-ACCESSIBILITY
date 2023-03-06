@@ -5,6 +5,7 @@
 //  Created by Thaynara da Silva Andrade on 17/02/23.
 //
 import SwiftUI
+import Foundation
 
 struct PaymentSelectView: View {
     
@@ -16,6 +17,7 @@ struct PaymentSelectView: View {
     @Binding var shouldPop: Bool
     
     var body: some View {
+        
         ZStack(alignment: .center) {
             VStack(alignment: .leading) {
                 Group {
@@ -38,34 +40,18 @@ struct PaymentSelectView: View {
                         dismiss()
                     }){
                         Text("Confirmar")
-                            .padding([.leading, .trailing], 108)
-                            .padding(.all)
-                            .foregroundColor(.white)
-                            .shadow(radius: 90)
                             .font(.title2.bold())
-                            .background(selectedIndex > 0 ? Color(UIColor.gray) : Color(UIColor.systemCyan))
-                            .cornerRadius(5)
-                    }
+                                        .padding(.vertical, 12)
+                                        .foregroundColor(Color.white)
+                                        .frame(maxWidth: .infinity)
+                                        .background(selectedIndex >  0  ?  Color (UIColor.gray ) :  Color.actionColor)
+                                        .cornerRadius(5)
+                       // static let actionColor = Color(red: 36/255, green: 123/255, blue: 160/255)
+                    } 
                 }
                 
             }.padding(.all, 20)
-            
-            Rectangle()
-                .foregroundColor(colorScheme == .light ? Color(UIColor.white): Color(UIColor.systemGray6) )
-                .zIndex(-1)
-                //.ignoresSafeArea()
-                .padding(.bottom)
-                .cornerRadius(25)
-                .shadow(radius: 10)
-        } .frame(height: UIScreen.main.bounds.height/4)
-        
-    
-
-
-        //            Rectangle()
-        //                .foregroundColor(colorScheme == .light ? Color(UIColor.white): Color(UIColor.systemGray6) )
-        //                .shadow(radius: 4)
-        //                .zIndex(-1)
+        }
     }
     
 }
