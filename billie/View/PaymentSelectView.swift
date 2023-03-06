@@ -23,13 +23,13 @@ struct PaymentSelectView: View {
                 Group {
                     HStack{
                         
-                        Text("Total:")
+                        Text("Total")
                         Spacer()
                         Text("R$ \(totalPrice + totalPrice*0.1, specifier: "%.2f")")
                     }
                     .font(Font.title3.bold())
                     HStack{
-                        Text("Forma de pagamento:")
+                        Text("Forma de pagamento")
                         Spacer()
                         Text("\(PaymentIndex[selectedIndex])")
                     } 

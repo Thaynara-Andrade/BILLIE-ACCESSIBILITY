@@ -5,10 +5,10 @@
   Created by Pedro Muniz on 06/10/22.
   
 */
-"10% Tip" = "10% da gorgeta";
+"10% Tip" = "10% taxa de serviço";
 "Error fetching data" = "Erro ao capturar os dados";
 "Please enter the price per unit" = "Por favor, digite o preço por unidade";
-"Success!" = "Sucesso!";
+//"Success!" = "Sucesso!";
 "Hi, I'm Billie, your new bill-paying buddy." = "Olá, sou o Billie, seu companheiro na hora de pagar contas.";
 "Here you can scan or manually add, your table's invoice;
 edit the scanned items or values, if necessary;
@@ -24,7 +24,7 @@ Simples, rápido e seguro.";
 "Scan error" = "Erro ao escanear";
 "There was an error scanning your receipt 😟 You can try again framing only its most important parts (the itens and the prices)" = "Aconteceu um erro ao escanear sua nota. Você pode tentar de novo enquadrando apenas a parte mais importante (os itens e preços)";
 "Try again" = "Tentar de novo";
-"Slide to pay" = "Deslize para pagar";
+"Continue" = "Continuar";
 "Scan receipt" = " Escanear a nota ";
 "Enter manually" = "Digitar manualmente";
 "Cash" = "Dinheiro";
