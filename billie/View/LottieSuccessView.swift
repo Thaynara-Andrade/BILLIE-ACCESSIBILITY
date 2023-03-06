@@ -16,14 +16,14 @@ struct LottieSucessView: View {
     var body: some View {
         ZStack {
             LottieView(isEnded: $isEndedFirst, filename: "success")
-                
         }
+        
         .navigationBarBackButtonHidden(true)
         .onChange(of: isEndedFirst) { newValue in
             dismiss()
         }
     }
-    
+
     struct LottieSucess_Previews: PreviewProvider {
         static var previews: some View {
             LottieSucessView()

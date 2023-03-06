@@ -26,10 +26,13 @@ struct CheckoutView: View {
                 
                 List{
                     Label ( "Pix", image: "IconPix")
+                        .accessibilityLabel("Pagamento em PIX")
                     Label ( "Cash", image: "IconMoney")
+                        .accessibilityLabel("Pagamento em Dinheiro")
                     Label ( "Apple pay", image: "IconApplePay")
+                        .accessibilityLabel("Pagamento no Apple pay")
                     Label ( "Add payment method", systemImage: "plus")
-                    
+                        .accessibilityLabel("Adicionar outro método de pagamento")
                 }
                 Spacer(minLength: 20)
                 

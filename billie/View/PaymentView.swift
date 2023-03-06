@@ -55,8 +55,6 @@ struct PaymentView: View {
                     //.ignoresSafeArea()
                 // .padding(.bottom)
                 
-                
-                
             }
         } 
       }

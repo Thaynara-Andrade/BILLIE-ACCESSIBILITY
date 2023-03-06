@@ -22,6 +22,7 @@ struct LottieView: UIViewRepresentable {
         animationView.contentMode = .scaleAspectFit //scales the animation properly
         animationView.play { finished in
             isEnded.toggle()
+
         }
         
         //here we deal with constraints:
