@@ -103,8 +103,6 @@ struct BillListView: View {
         .sheet(isPresented: $slideSuceeded){
             CheckoutView(totalPrice: sumOfAllItems)
         }
-        
-        
     }
 //        .navigationBarBackButtonHidden(true)
 //        .scrollDismissesKeyboard(.interactively)

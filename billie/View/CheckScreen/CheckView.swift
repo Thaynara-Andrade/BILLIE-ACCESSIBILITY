@@ -38,9 +38,9 @@ struct CheckView: View {
             itemData.removeAll()
         }
         .navigationTitle("Here is your receipt")
-        .navigationDestination(isPresented: $shouldPop) {
+        .navigationDestination(isPresented: $shouldPop){
             LottieSucessView()
-                .onDisappear {
+                .onDisappear{
                     dismiss()
                 }
         }

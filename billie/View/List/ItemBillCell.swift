@@ -3,7 +3,7 @@
 //  billie
 //
 //  Created by Luciana Adrião on 27/09/22.
-//
+
 
 import SwiftUI
 
@@ -36,6 +36,7 @@ struct ItemBillCell: View {
                         Text(itemModel.totalPrice, format: .currency(code: itemModel.localeCode))
                             .font(.body.bold())
                             .foregroundColor(itemModel.invalidDoubleValue(value: itemModel.totalPrice))
+                            .accessibilityLabel("Valor total" + String(itemModel.totalPrice))
                     }
                 }
                 
@@ -47,21 +48,27 @@ struct ItemBillCell: View {
                             .foregroundColor(itemModel.invalidDoubleValue(value: itemModel.unitPrice))
                             .keyboardType(.decimalPad)
                             .focused($field, equals: .unitPrice)
-                    } else {
+    
+                    }
+                    if !itemModel.isEditing {
                         Text(itemModel.unitPrice, format: .currency(code: itemModel.localeCode))
                             .foregroundColor(itemModel.invalidDoubleValue(value: itemModel.unitPrice))
-                    }
-                    
-                    if !itemModel.isEditing {
+                            .accessibilityLabel("Valor unitário" + String(itemModel.unitPrice))
                         Spacer()
                         Button("") {
                             itemModel.quantity = itemModel.quantityControl(quantityValue: itemModel.quantity)
                         }.buttonStyle(quantityButton(nameString: "minus.circle"))
+                            .accessibilityLabel("remover iténs")
                         
                         Text("\(itemModel.quantity)x")
+                            .accessibilityLabel("Quantidade de iténs" + String(itemModel.quantity))
+                        
                         Button("") {
                             itemModel.quantity = itemModel.quantity + 1
                         }.buttonStyle(quantityButton(nameString: "plus.circle"))
+                            .accessibilityLabel("Adicionar iténs")
+                       
+                        
                     }
                 }
             }.padding([.leading, .trailing], 10)
@@ -86,6 +93,7 @@ struct ItemBillCell: View {
             .font(.nameCellFont)
 //            .lineLimit(1)
             .focused($field, equals: .name)
+//            .accessibilityLabel("Digite o nome do itém")
     }
     
 }

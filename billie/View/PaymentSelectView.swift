@@ -27,14 +27,19 @@ struct PaymentSelectView: View {
                         Spacer()
                         Text("R$ \(totalPrice + totalPrice*0.1, specifier: "%.2f")")
                     }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel("Total da compra" + String(totalPrice))
                     .font(Font.title3.bold())
+                    
                     HStack{
                         Text("Forma de pagamento")
                         Spacer()
                         Text("\(PaymentIndex[selectedIndex])")
-                    } 
+                    }
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel("Forma de pagamento selecionado" + String(PaymentIndex[selectedIndex]))
+                    .foregroundColor(.secondary)
                     
-                        .foregroundColor(.secondary)
                     Button(action: {
                         shouldPop.toggle()
                         dismiss()
@@ -42,6 +47,7 @@ struct PaymentSelectView: View {
                     }){
                         Text("Confirmar")
                             .font(.title2.bold())
+                            .accessibilityLabel("Confirmar o pagamento")
                                         .padding(.vertical, 12)
                                         .foregroundColor(Color.white)
                                         .frame(maxWidth: .infinity)

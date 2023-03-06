@@ -36,7 +36,6 @@ struct billListRow: View {
 //                            .lineLimit(1)
                             .padding([.trailing],15)
                             .focused($field, equals: .name)
-                            
                     }else{
                         Text(item.name)
                             .font(.nameCellFont)
@@ -60,6 +59,8 @@ struct billListRow: View {
                             .keyboardType(.decimalPad)
                             .textFieldStyle(.roundedBorder)
                             .focused($field,equals: .unitPrice)
+                            .accessibilityElement(children: .combine)
+                            .accessibilityLabel("adicionar nome do itém")
 
                     }else{
                         Text("R$ \(item.unitPrice,specifier: "%.2f")")
@@ -94,6 +95,7 @@ struct billListRow: View {
                     Image(systemName: "checkmark.circle")
                         .foregroundColor(.accentColor)
                         .font(.title2)
+                        .accessibilityLabel("Confirmar inserção do itéms")
                 }
             }
         }
