@@ -38,6 +38,7 @@ struct PaymentSelectView: View {
                     Button(action: {
                         shouldPop.toggle()
                         dismiss()
+                        SoundManager.instance.PlaySound()
                     }){
                         Text("Confirmar")
                             .font(.title2.bold())

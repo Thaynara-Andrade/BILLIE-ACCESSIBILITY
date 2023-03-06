@@ -30,6 +30,8 @@
 		4943E16A28DE320800803CB7 /* LottieSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943E16928DE320800803CB7 /* LottieSuccessView.swift */; };
 		4974503328E5D54300CCC8D8 /* PickerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974503228E5D54300CCC8D8 /* PickerRowView.swift */; };
 		4974503528E5D57300CCC8D8 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974503428E5D57300CCC8D8 /* PaymentView.swift */; };
+		498D316029B61C5D00331BF7 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D315F29B61C5D00331BF7 /* SoundEffects.swift */; };
+		498D316329B61CE600331BF7 /* sucess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498D316229B61CE600331BF7 /* sucess.mp3 */; };
 		49E32BBB29A02ACD004D4E59 /* PaymentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */; };
 		7E1A7A9628E22E0B00C61FD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A7A9528E22E0B00C61FD6 /* Extensions.swift */; };
 		7E1A7A9828E34E6C00C61FD6 /* ItemBillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A7A9728E34E6C00C61FD6 /* ItemBillCell.swift */; };
@@ -90,6 +92,8 @@
 		4943E16928DE320800803CB7 /* LottieSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSuccessView.swift; sourceTree = "<group>"; };
 		4974503228E5D54300CCC8D8 /* PickerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerRowView.swift; sourceTree = "<group>"; };
 		4974503428E5D57300CCC8D8 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		498D315F29B61C5D00331BF7 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		498D316229B61CE600331BF7 /* sucess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sucess.mp3; sourceTree = "<group>"; };
 		49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectView.swift; sourceTree = "<group>"; };
 		7E1A7A9528E22E0B00C61FD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7E1A7A9728E34E6C00C61FD6 /* ItemBillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBillCell.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				7E26326F28D8FDE500FD049B /* TotalOverView.swift */,
 				4974503428E5D57300CCC8D8 /* PaymentView.swift */,
 				49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */,
+				498D315F29B61C5D00331BF7 /* SoundEffects.swift */,
+				498D316129B61C6800331BF7 /* Sound */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,6 +246,14 @@
 				2913F17928D0B40D000CE54F /* RegexBuilder.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		498D316129B61C6800331BF7 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				498D316229B61CE600331BF7 /* sucess.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		7E1A7A9B28E3682300C61FD6 /* List */ = {
@@ -381,6 +395,7 @@
 			files = (
 				1D3A72A528EFA9910096DF6E /* Localizable.strings in Resources */,
 				2969FCBA28CA1353009FBB4F /* Preview Assets.xcassets in Resources */,
+				498D316329B61CE600331BF7 /* sucess.mp3 in Resources */,
 				29EF1C9028E625430027B167 /* success.json in Resources */,
 				2969FCB728CA1353009FBB4F /* Assets.xcassets in Resources */,
 				1D762B5128E1E3A700A65797 /* BillieMoneySupposedlyFinal.json in Resources */,
@@ -418,6 +433,7 @@
 				4943E16A28DE320800803CB7 /* LottieSuccessView.swift in Sources */,
 				7E1A7A9A28E3664000C61FD6 /* ItemListView.swift in Sources */,
 				2969FCDD28CA139C009FBB4F /* ScannerView.swift in Sources */,
+				498D316029B61C5D00331BF7 /* SoundEffects.swift in Sources */,
 				1D89BCB928D2459100357248 /* HomeScreenView.swift in Sources */,
 				7EF5327528E53EC30017C31D /* AnimationTextView.swift in Sources */,
 				2969FCB328CA1351009FBB4F /* billieApp.swift in Sources */,

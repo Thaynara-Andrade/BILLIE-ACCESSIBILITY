@@ -65,7 +65,7 @@ struct scanButton: ButtonStyle {
         }
         .scaleEffect(configuration.isPressed ? 0.8: 1)
         .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
-        .foregroundColor(colorScheme == .dark ? .blue:
+        .foregroundColor(colorScheme == .dark ? .white:
                 .white)
         .padding(.all, 12)
         .padding([.leading,.trailing])
@@ -88,7 +88,7 @@ struct manualEnterButton: ButtonStyle {
                 }
                 .scaleEffect(configuration.isPressed ? 0.8: 1)
                 .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
-                .foregroundColor(colorScheme == .dark ? .blue:
+                .foregroundColor(colorScheme == .dark ? Color.actionColor:
                                     Color.actionColor)
                 
                 .padding(.all, 12)
