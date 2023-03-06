@@ -93,10 +93,10 @@ struct SliderButton: View {
                     }
                 }
             }.frame(height: 80, alignment: .center)
-                .accessibilityLabel("Ir para pagamento")
-                .accessibilityElement(children: .combine)
-                .accessibilityRemoveTraits(.isImage)
-                .accessibilityAddTraits(.isButton)
+//                .accessibilityLabel("Ir para pagamento")
+//                .accessibilityElement(children: .combine)
+//                .accessibilityRemoveTraits(.isImage)
+//                .accessibilityAddTraits(.isButton)
         }.frame(height: 80, alignment: .center)
             .ignoresSafeArea(.keyboard)
             

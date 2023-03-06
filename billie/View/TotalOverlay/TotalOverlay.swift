@@ -36,6 +36,11 @@ struct TotalOverlay: View {
             }
            
             SliderButton(success: $slideSuceeded)
+                .accessibilityRepresentation {
+                    Button("Ir para pagamento") {
+                        slideSuceeded = true
+                    }
+                }
                 .scenePadding([.top])
         }
         .padding([.leading, .trailing, .top], 20)
