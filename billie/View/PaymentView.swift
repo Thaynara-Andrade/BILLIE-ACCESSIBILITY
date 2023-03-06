@@ -18,7 +18,7 @@ struct PaymentView: View {
     }
 
     
-    
+
     
     var body: some View {
         
