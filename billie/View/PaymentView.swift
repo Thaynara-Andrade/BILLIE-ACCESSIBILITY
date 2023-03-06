@@ -1,23 +1,31 @@
 import SwiftUI
+import Foundation
 
 struct PaymentView: View {
     @Environment(\.dismiss) private var dismiss
-     var PaymentIndex = ["Dinheiro", "Pix",  "Apple pay"]
-    @State var selectedIndex = 0
-    @State  var images: [Image] = [Image("IconMoney"), Image("IconPix"), Image("IconApplePay")]
+    @Environment(\.colorScheme) var colorScheme
+    var PaymentIndex = ["Dinheiro", "Pix",  "Apple pay"]
     let alignment: Alignment = .bottom
-    @State var alertButton = false
     @Binding var shouldPop: Bool
+    @State var selectedIndex = 0
+    @State var alertButton = false
+    @Binding var items: [TabItem]
+    @State  var images: [Image] = [Image("IconMoney"), Image("IconPix"), Image("IconApplePay")]
     
+    var sumOfAllItems: Double {
+        let totalPrices = items.map(\.totalPrice)
+        return totalPrices.reduce(0, +)
+    }
+
     
+
     
     var body: some View {
         
-            
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .top) {
             NavigationStack{
                 Form {
-                    Section("") {
+                    Section("Formas de pagamento") {
                         Picker(selection: $selectedIndex,label: EmptyView()){
                             ForEach(0 ..< PaymentIndex.count) {
                                 if $0 < 1 {
@@ -28,56 +36,37 @@ struct PaymentView: View {
                             }
                         }
                         .accentColor(selectedIndex > 0 ? Color.clear : Color.actionColor)
+                        
                     }.pickerStyle(.inline)
                         .onChange(of: selectedIndex, perform: { _ in
                             selectedIndex > 0 ? alertButton.toggle(): nil
                         })
                         .alert(isPresented: $alertButton) {
-                            Alert(title: Text("This payment method isn't available yet"),
-                                  message: Text("Sorry! Our team is working to make this feature available as soon as possible."),
-                                  dismissButton: .default(Text("Ok")))
+                            Alert(title: Text("Este método de pagamento ainda não está disponível"),
+                                  message: Text("Desculpe! Nossa equipe está trabalhando para disponibilizar esse recurso o mais rápido possível."),
+                                  dismissButton: .default(Text("Entendi")))
                         }
                     
                 }
                 .listStyle(.sidebar)
+
+                PaymentSelectView(totalPrice: sumOfAllItems, shouldPop: $shouldPop)
+                    .frame(maxHeight:155 , alignment: .bottom)
+                    //.ignoresSafeArea()
+                // .padding(.bottom)
                 
-                if selectedIndex > 0 {
-                    //
-                } else {
-                    Button {
-                        shouldPop.toggle ()
-                        dismiss()
-                    } label: {
-                        Text("Pay with \(PaymentIndex[selectedIndex])")
-                            .padding([.leading, .trailing], 20).padding(.all)
-                            .foregroundColor(.white)
-                            .font(.title2.bold())
-                            .background(selectedIndex > 0 ? Color(UIColor.gray): Color(UIColor.systemGreen))
-                            .cornerRadius(20)
-                        
-                    }
-                }
             }
+        } .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+      }
+    }
+    
+    struct TestePaymentView_Previews: PreviewProvider {
+        @State static var items: [TabItem] = [
+            TabItem(),
+            TabItem()
+        ]
+        static var previews: some View {
+            PaymentView(shouldPop: .constant(false), items: $items)
         }
     }
-}
 
-struct TestePaymentView_Previews: PreviewProvider {
-    static var previews: some View {
-        PaymentView(shouldPop: .constant(false))
-    }
-}
-
-
-//Button {
-//} label: {
-//    Text("Pagar com \(PaymentIndex[selectedIndex])")
-//        .padding()
-//        .foregroundColor(.white)
-//        .background(.green)
-//        .font(.title2)
-//        .bold()
-//        .cornerRadius(20)
-//        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-//        .background(Color.clear)
-//}

@@ -5,18 +5,25 @@
   Created by Pedro Muniz on 06/10/22.
   
 */
-
 "10% Tip" = "10% Tip";
 "Error fetching data" = "Error fetching data";
 "Please enter the price per unit" = "Please enter the price per unit";
 "Success!" = "Success!";
-"Let me help you 😃" = "Let me help you 😃";
-"You can use Billie to scan you table's receipt, edit the itens or values captured by the scan (in case you need to), add up your share of the expenses, and send the payment to the restaurant." = "You can use Billie to scan you table's receipt, edit the itens or values captured by the scan (in case you need to), add up your share of the expenses, and send the payment to the restaurant.";
+"Hi, I'm Billie, your new bill-paying buddy." = "Hi, I'm Billie, your new bill-paying buddy.";
+"Here you can scan or manually add, your table's invoice;
+edit the scanned items or values, if necessary;
+add up your expenses and finally send the payment to the establishment.
+
+Simple, fast and secure." = "Here you can scan or manually add, your table's invoice;
+edit the scanned items or values, if necessary;
+add up your expenses and finally send the payment to the establishment.
+
+Simple, fast and secure.";
 "Got it" = "Got it";
 "Scan error" = "Scan error";
 "There was an error scanning your receipt 😟 You can try again framing only its most important parts (the itens and the prices)" = "There was an error scanning your receipt 😟 You can try again framing only its most important parts (the itens and the prices)";
 "Try again" = "Try again";
-"Slide to pay" = "Slide to pay";
+"Continue" = "Continue";
 "Scan receipt" = "Scan receipt";
 "Enter manually" = "Enter manually";
 "Cash" = "Cash";

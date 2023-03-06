@@ -60,17 +60,17 @@ struct scanButton: ButtonStyle {
         HStack {
             Image(systemName: "doc.text.viewfinder")
             Text("Scan receipt")
-                .fontWeight(.semibold)
+                .fontWeight(.regular)
                 .font(Font.title3)
         }
         .scaleEffect(configuration.isPressed ? 0.8: 1)
         .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
-        .foregroundColor(colorScheme == .dark ? .blue:
-                            Color.actionColor)
+        .foregroundColor(colorScheme == .dark ? .white:
+                .white)
         .padding(.all, 12)
         .padding([.leading,.trailing])
-        .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(.white).opacity(isEnded ? 1 :0).animation(.easeOut(duration: 0.2), value: isEnded)
-        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(Color.actionColor).opacity(isEnded ? 1 :0).animation(.easeOut(duration: 0.2), value: isEnded)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
@@ -81,10 +81,21 @@ struct manualEnterButton: ButtonStyle {
         var animationSpeed: Double = 0.4
         configuration.label
         if isEnded{
-            Text("Enter manually")
-                .foregroundColor(colorScheme == .dark ? Color.white: Color.actionColor)
-                .transition(.scale)
-                .padding([.leading, .trailing, .bottom], 10)
+            HStack {
+                Text("Enter manually")
+                .fontWeight(.regular)
+                .font(Font.title3)
+                }
+                .scaleEffect(configuration.isPressed ? 0.8: 1)
+                .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
+                .foregroundColor(colorScheme == .dark ? Color.actionColor:
+                                    Color.actionColor)
+                
+                .padding(.all, 12)
+                .padding([.leading,.trailing])
+                .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(.white).opacity(isEnded ? 03 :0).animation(.easeOut(duration: 0.2), value: isEnded)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+
         }
     }
 }

@@ -12,6 +12,7 @@ struct CheckView: View {
     @Binding var itemData: [TabItem]
     @State var slideSuceeded: Bool = false
     @State var shouldPop: Bool = false
+
     
     var sumOfAllItems: Double {
         let totalPrices = itemData.map(\.totalPrice)
@@ -31,7 +32,7 @@ struct CheckView: View {
         }
         .sheet(isPresented: $slideSuceeded){
 //            CheckoutView(totalPrice: sumOfAllItems)
-            PaymentView(shouldPop: $shouldPop)
+            PaymentView(shouldPop: $shouldPop, items: $itemData)
         }
         .onDisappear{
             itemData.removeAll()

@@ -34,7 +34,7 @@ struct SliderButton: View {
                         .foregroundColor(Color(UIColor.systemGray5))
                         .frame(height: 80, alignment: .center)
                         .overlay(alignment: .center) {
-                            textShimmer(text: "Slide to pay")
+                            textShimmer(text: "Continuar")
                                 .padding([.leading],30)
                         }
                     
@@ -93,9 +93,14 @@ struct SliderButton: View {
                     }
                 }
             }.frame(height: 80, alignment: .center)
-            
+//                .accessibilityLabel("Ir para pagamento")
+//                .accessibilityElement(children: .combine)
+//                .accessibilityRemoveTraits(.isImage)
+//                .accessibilityAddTraits(.isButton)
         }.frame(height: 80, alignment: .center)
             .ignoresSafeArea(.keyboard)
+            
+            
         
     }
     func prepareHaptics() {
@@ -163,18 +168,21 @@ struct SwipeButton: View {
                     RoundedRectangle(cornerRadius: 60, style: .circular)
                 })
                 .overlay(alignment: .trailing) {
-                    Image(systemName: "ruler").font(.custom( "grande", size: 50))
+                    Image(systemName: "arrowshape.right").font(.custom( "pequeno", size: 50))
                         .foregroundColor(.white)
-                        .padding()
+                        .padding(20)
                         .opacity(self.sucess ? 0 : 1)
                     
-                    Image(systemName: "ruler.fill").font(.custom( "grande", size: 50))
+                    Image(systemName: "arrowshape.right.fill").font(.custom( "grande", size: 50))
                         .foregroundColor(.white)
-                        .padding()
+                        .padding(20)
                         .opacity(self.sucess ? 1 : 0)
+                        
+                    
                 }
             
         }
+        .dynamicTypeSize(...DynamicTypeSize.medium)
     }
 }
 

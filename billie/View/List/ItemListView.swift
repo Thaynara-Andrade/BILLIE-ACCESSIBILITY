@@ -22,9 +22,9 @@ struct ItemListView: View {
                     ForEach($items, id: \.id) { $item in
                         makeCell(for: $item)
                     }
-                } header: {
-                    header
-                }
+//                } header: {
+//                    header
+//                }
                 .headerProminence(.increased)
             }
             .listStyle(.grouped)
@@ -39,15 +39,17 @@ struct ItemListView: View {
                 } label: {
                     Image(systemName: "text.badge.plus")
                         .foregroundColor(.actionColor)
+                        .accessibilityLabel("Adicionar itens da nota fiscal")
                 }
             }
         }
     }
     
-    var header: some View {
-        Text("Success!")
-            .font(.subheadline)
-            .foregroundColor(.secondary)
+//    var header: some View {
+//        Text("Success!")
+//            .font(.subheadline)
+//            .foregroundColor(.secondary)
+//            .accessibilityHidden(true)
     }
     
     func makeCell(for item: Binding<TabItem>) -> some View {

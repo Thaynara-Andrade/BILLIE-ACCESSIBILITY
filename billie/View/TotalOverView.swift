@@ -16,10 +16,10 @@ struct TotalOverView: View {
     
     var body: some View {
         ZStack(alignment: .center) {
+            
             VStack(alignment: .leading) {
                 Group {
                     HStack{
-                        Image(systemName: "person.fill")
                         Text("Total")
                         Spacer()
                         Text("R$ \(totalPrice, specifier: "%.2f")")
@@ -32,6 +32,7 @@ struct TotalOverView: View {
                         Text("R$ \(totalPrice*0.1, specifier: "%.2f")")
                     }
                     .foregroundColor(.secondary)
+                    
                     SliderButton(success: $slideSuceeded)
                         .frame(maxHeight: 70)
                         .padding([.bottom], 30)
@@ -41,8 +42,9 @@ struct TotalOverView: View {
             .ignoresSafeArea(.keyboard)
             .padding(.all, 20)
             Rectangle()
+                //.cornerRadius(25)
                 .foregroundColor(colorScheme == .light ? Color(UIColor.white): Color(UIColor.systemGray6) )
-                .shadow(radius: 4)
+                //.shadow(radius: 4)
                 .zIndex(-1)
         }
         .frame(height: UIScreen.main.bounds.height/9)
@@ -50,8 +52,11 @@ struct TotalOverView: View {
     }
 }
 
-
 struct TotalOverView_Previews: PreviewProvider {
+    @State static var items: [TabItem] = [
+        TabItem(),
+        TabItem()
+    ]
     static var previews: some View {
         TotalOverView(totalPrice: 20, slideSuceeded: .constant(false))
     }

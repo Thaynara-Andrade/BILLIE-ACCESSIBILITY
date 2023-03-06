@@ -33,14 +33,14 @@ struct billListRow: View {
                         TextField("Edit name", text: $item.name)
                             .textFieldStyle(.roundedBorder)
                             .font(.nameCellFont)
-                            .lineLimit(1)
+//                            .lineLimit(1)
                             .padding([.trailing],15)
                             .focused($field, equals: .name)
                             
                     }else{
                         Text(item.name)
                             .font(.nameCellFont)
-                            .lineLimit(1)
+//                            .lineLimit(1)
                             .padding([.trailing],15)
                             .padding([.bottom],23)
                     }
