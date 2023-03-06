@@ -60,17 +60,17 @@ struct scanButton: ButtonStyle {
         HStack {
             Image(systemName: "doc.text.viewfinder")
             Text("Scan receipt")
-                .fontWeight(.semibold)
+                .fontWeight(.regular)
                 .font(Font.title3)
         }
         .scaleEffect(configuration.isPressed ? 0.8: 1)
         .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
         .foregroundColor(colorScheme == .dark ? .blue:
-                            Color.actionColor)
+                .white)
         .padding(.all, 12)
         .padding([.leading,.trailing])
-        .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(.white).opacity(isEnded ? 1 :0).animation(.easeOut(duration: 0.2), value: isEnded)
-        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(Color.actionColor).opacity(isEnded ? 1 :0).animation(.easeOut(duration: 0.2), value: isEnded)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
@@ -88,13 +88,13 @@ struct manualEnterButton: ButtonStyle {
                 }
                 .scaleEffect(configuration.isPressed ? 0.8: 1)
                 .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
-                .foregroundColor(colorScheme == .dark ? .white:
-                        .white)
+                .foregroundColor(colorScheme == .dark ? .blue:
+                                    Color.actionColor)
                 
                 .padding(.all, 12)
                 .padding([.leading,.trailing])
-                .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(.blue).opacity(isEnded ? 03 :0).animation(.easeOut(duration: 0.2), value: isEnded)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .opacity(isEnded ? 1: 0).animation(.easeInOut(duration: 0.2), value: isEnded).background(.white).opacity(isEnded ? 03 :0).animation(.easeOut(duration: 0.2), value: isEnded)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
 
         }
     }

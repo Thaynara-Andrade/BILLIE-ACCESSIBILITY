@@ -1,4 +1,5 @@
 import SwiftUI
+import Foundation
 
 struct PaymentView: View {
     @Environment(\.dismiss) private var dismiss
@@ -21,7 +22,7 @@ struct PaymentView: View {
     
     var body: some View {
         
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .top) {
             NavigationStack{
                 Form {
                     Section("Formas de pagamento") {
@@ -35,6 +36,7 @@ struct PaymentView: View {
                             }
                         }
                         .accentColor(selectedIndex > 0 ? Color.clear : Color.actionColor)
+                        
                     }.pickerStyle(.inline)
                         .onChange(of: selectedIndex, perform: { _ in
                             selectedIndex > 0 ? alertButton.toggle(): nil
@@ -47,17 +49,17 @@ struct PaymentView: View {
                     
                 }
                 .listStyle(.sidebar)
-        
+                
                 PaymentSelectView(totalPrice: sumOfAllItems, shouldPop: $shouldPop)
-                    .frame(maxHeight:0 , alignment: .trailingLastTextBaseline)
-                   .ignoresSafeArea(.keyboard)
-                   .padding(.bottom)
-                    
-                    
+                    .frame(maxHeight:155 , alignment: .bottom)
+                    //.ignoresSafeArea()
+                // .padding(.bottom)
+                
+                
                 
             }
-            
-        }
+        } 
+      }
     }
     
     struct TestePaymentView_Previews: PreviewProvider {
@@ -69,4 +71,4 @@ struct PaymentView: View {
             PaymentView(shouldPop: .constant(false), items: $items)
         }
     }
-}
+
