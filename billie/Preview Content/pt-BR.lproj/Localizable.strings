@@ -5,13 +5,21 @@
   Created by Pedro Muniz on 06/10/22.
   
 */
-
 "10% Tip" = "10% da gorgeta";
 "Error fetching data" = "Erro ao capturar os dados";
 "Please enter the price per unit" = "Por favor, digite o preço por unidade";
 "Success!" = "Sucesso!";
-"Let me help you 😃" = "Deixa eu te ajudar 😃";
-"You can use Billie to scan you table's receipt, edit the itens or values captured by the scan (in case you need to), add up your share of the expenses, and send the payment to the restaurant." = "Você pode usar o Billie para escanear a nota fiscal da sua mesa, editar os itens ou valores escaneados (caso você precise), somar sua parte dos gastos, e enviar o pagamento para o restaurante.";
+"Hi, I'm Billie, your new bill-paying buddy." = "Olá, sou o Billie, seu companheiro na hora de pagar contas.";
+"Here you can scan or manually add, your table's invoice;
+edit the scanned items or values, if necessary;
+add up your expenses and finally send the payment to the establishment.
+
+Simple, fast and secure." =
+"Aqui você pode escanear ou adicionar manualmente, a nota fiscal da sua mesa;
+editar os itens ou valores escaneados, se necessário;
+somar seus gastos e por fim, enviar o pagamento ao estabelecimento.
+
+Simples, rápido e seguro.";
 "Got it" = "Entendi";
 "Scan error" = "Erro ao escanear";
 "There was an error scanning your receipt 😟 You can try again framing only its most important parts (the itens and the prices)" = "Aconteceu um erro ao escanear sua nota. Você pode tentar de novo enquadrando apenas a parte mais importante (os itens e preços)";
