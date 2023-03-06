@@ -50,6 +50,7 @@ struct PaymentView: View {
                 }
                 .listStyle(.sidebar)
                 
+                
                 PaymentSelectView(totalPrice: sumOfAllItems, shouldPop: $shouldPop)
                     .frame(maxHeight:155 , alignment: .bottom)
                     //.ignoresSafeArea()
@@ -58,7 +59,7 @@ struct PaymentView: View {
                 
                 
             }
-        } 
+        } .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
       }
     }
     

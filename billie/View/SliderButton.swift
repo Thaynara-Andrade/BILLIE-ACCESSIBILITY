@@ -168,22 +168,21 @@ struct SwipeButton: View {
                     RoundedRectangle(cornerRadius: 60, style: .circular)
                 })
                 .overlay(alignment: .trailing) {
-                    Image(systemName: "arrowshape.right").font(.custom( "grande", size: 50))
+                    Image(systemName: "arrowshape.right").font(.custom( "pequeno", size: 50))
                         .foregroundColor(.white)
-                        .padding()
+                        .padding(20)
                         .opacity(self.sucess ? 0 : 1)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                      
                     
                     Image(systemName: "arrowshape.right.fill").font(.custom( "grande", size: 50))
                         .foregroundColor(.white)
-                        .padding()
+                        .padding(20)
                         .opacity(self.sucess ? 1 : 0)
                         
                     
                 }
             
         }
+        .dynamicTypeSize(...DynamicTypeSize.medium)
     }
 }
 
