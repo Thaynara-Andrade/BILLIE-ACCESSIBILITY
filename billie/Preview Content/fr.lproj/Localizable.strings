@@ -6,7 +6,7 @@
   
 */
 
-"10% Tip" = "10% du pourboire";
+"10% Tip" = "10% frais de service";
 "Error fetching data" = "Une erreur s'est produite pendant l'extraction des données";
 "Please enter the price per unit" = "Saisie le prix unitaire, s'il te plait";
 "Success!" = "Succès !";
@@ -24,7 +24,7 @@ Simple, rapide et sécurisé.";
 "Scan error" = "Erreur de numérisation";
 "There was an error scanning your receipt 😟 You can try again framing only its most important parts (the itens and the prices)" = "Il y a eu un erreur pendant la numérisation de la facture 😟 Tu peux réessayer en encadrant juste les informations les plus importantes (les articles et les prix)";
 "Try again" = "Réessayer";
-"Slide to pay" = "Glisser pour payer";
+"Continue" = "Continuer";
 "Scan receipt" = "Scanner l'addition";
 "Enter manually" = "Saisir manuellement";
 "Cash" = "Espèces";

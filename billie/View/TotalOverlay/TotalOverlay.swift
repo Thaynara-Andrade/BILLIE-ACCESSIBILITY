@@ -32,7 +32,7 @@ struct TotalOverlay: View {
                 }
                 .foregroundColor(.secondary)
                 .accessibilityElement(children: .combine)
-                .accessibilityLabel("10% de gorjeta," + String(sumTotalPrice*0.1))
+                .accessibilityLabel("10% taxa de serviço" + String(sumTotalPrice*0.1))
             }
            
             SliderButton(success: $slideSuceeded)

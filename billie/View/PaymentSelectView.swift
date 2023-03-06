@@ -22,7 +22,8 @@ struct PaymentSelectView: View {
             VStack(alignment: .leading) {
                 Group {
                     HStack{
-                        Text("Total:")
+                        
+                        Text("Total")
                         Spacer()
                         Text("R$ \(totalPrice + totalPrice*0.1, specifier: "%.2f")")
                     }
@@ -31,7 +32,7 @@ struct PaymentSelectView: View {
                     .font(Font.title3.bold())
                     
                     HStack{
-                        Text("Forma de pagamento:")
+                        Text("Forma de pagamento")
                         Spacer()
                         Text("\(PaymentIndex[selectedIndex])")
                     }
@@ -42,6 +43,7 @@ struct PaymentSelectView: View {
                     Button(action: {
                         shouldPop.toggle()
                         dismiss()
+                        SoundManager.instance.PlaySound()
                     }){
                         Text("Confirmar")
                             .font(.title2.bold())
