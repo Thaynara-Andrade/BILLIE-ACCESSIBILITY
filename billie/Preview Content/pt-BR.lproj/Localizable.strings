@@ -9,15 +9,15 @@
 "Error fetching data" = "Erro ao capturar os dados";
 "Please enter the price per unit" = "Por favor, digite o preço por unidade";
 //"Success!" = "Sucesso!";
-"Hi, I'm Billie, your new bill-paying buddy." = "Olá, sou o Billie, seu companheiro na hora de pagar contas.";
+"Hi, I'm Billie, your new bill-paying buddy." = "Olá, sou o Billie
+seu companheiro na hora de pagar contas.
+";
 "Here you can scan or manually add, your table's invoice;
 edit the scanned items or values, if necessary;
 add up your expenses and finally send the payment to the establishment.
 
 Simple, fast and secure." =
-"Aqui você pode escanear ou adicionar manualmente, a nota fiscal da sua mesa;
-editar os itens ou valores escaneados, se necessário;
-somar seus gastos e por fim, enviar o pagamento ao estabelecimento.
+"Aqui você pode escanear ou adicionar manualmente, a nota fiscal da sua mesa; editar os itens ou valores escaneados, se necessário; somar seus gastos e por fim, enviar o pagamento ao estabelecimento.
 
 Simples, rápido e seguro.";
 "Got it" = "Entendi";

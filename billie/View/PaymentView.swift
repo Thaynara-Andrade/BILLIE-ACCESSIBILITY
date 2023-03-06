@@ -49,14 +49,11 @@ struct PaymentView: View {
                     
                 }
                 .listStyle(.sidebar)
-                
-                
+
                 PaymentSelectView(totalPrice: sumOfAllItems, shouldPop: $shouldPop)
                     .frame(maxHeight:155 , alignment: .bottom)
                     //.ignoresSafeArea()
                 // .padding(.bottom)
-                
-                
                 
             }
         } .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
