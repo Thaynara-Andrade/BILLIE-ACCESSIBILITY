@@ -34,7 +34,7 @@ struct SliderButton: View {
                         .foregroundColor(Color(UIColor.systemGray5))
                         .frame(height: 80, alignment: .center)
                         .overlay(alignment: .center) {
-                            textShimmer(text: "Slide to pay")
+                            textShimmer(text: "Continuar")
                                 .padding([.leading],30)
                         }
                     
@@ -172,11 +172,15 @@ struct SwipeButton: View {
                         .foregroundColor(.white)
                         .padding()
                         .opacity(self.sucess ? 0 : 1)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                      
                     
                     Image(systemName: "arrowshape.right.fill").font(.custom( "grande", size: 50))
                         .foregroundColor(.white)
                         .padding()
                         .opacity(self.sucess ? 1 : 0)
+                        
+                    
                 }
             
         }
