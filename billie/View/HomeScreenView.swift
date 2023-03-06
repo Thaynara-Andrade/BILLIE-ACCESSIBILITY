@@ -46,8 +46,14 @@ struct HomeScreenView: View {
                             .padding(.all, 10)
                             .accessibilityLabel("Deseja saber como o App funciona?")
                     }.alert(isPresented: $alertHelpButton) {
-                        Alert(title: Text("Let me help you 😃"),
-                              message: Text("You can use Billie to scan you table's receipt, edit the itens or values captured by the scan (in case you need to), add up your share of the expenses, and send the payment to the restaurant."),
+                        Alert(title: Text("Hi, I'm Billie, your new bill-paying buddy."),
+                              message: Text("""
+                                            Here you can scan or manually add, your table's invoice;
+                                            edit the scanned items or values, if necessary;
+                                            add up your expenses and finally send the payment to the establishment.
+
+                                            Simple, fast and secure.
+                                            """),
                               dismissButton: .default(Text("Got it")))
                     }
                 }
