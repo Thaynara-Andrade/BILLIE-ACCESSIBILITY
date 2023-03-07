@@ -10,8 +10,8 @@ struct PickerRowView: View {
         HStack{
             image
                 .resizable()
-                .frame(width: 16 * scale, height: 16 * scale)
-            Spacer().frame(width: 16)
+                .frame(width: 30 * scale, height: 30 * scale)
+            Spacer().frame(width: 14)
             Text(text)
         }
     }
