@@ -94,6 +94,7 @@
 		4974503428E5D57300CCC8D8 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		498D315F29B61C5D00331BF7 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
 		498D316229B61CE600331BF7 /* sucess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sucess.mp3; sourceTree = "<group>"; };
+		498D316829B760A700331BF7 /* billie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = billie.entitlements; sourceTree = "<group>"; };
 		49E32BBA29A02ACD004D4E59 /* PaymentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectView.swift; sourceTree = "<group>"; };
 		7E1A7A9528E22E0B00C61FD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7E1A7A9728E34E6C00C61FD6 /* ItemBillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBillCell.swift; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 		2969FCB128CA1351009FBB4F /* billie */ = {
 			isa = PBXGroup;
 			children = (
+				498D316829B760A700331BF7 /* billie.entitlements */,
 				29EF982A28CF77F40000E300 /* Service */,
 				29EF982928CF77DE0000E300 /* Model */,
 				29EF982828CF77CD0000E300 /* View */,
@@ -621,10 +623,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = billie/billie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"billie/Preview Content\"";
-				DEVELOPMENT_TEAM = LL57B8LDN4;
+				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -639,7 +642,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = appledeveloperacademy.billie;
+				PRODUCT_BUNDLE_IDENTIFIER = app.billie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -652,10 +655,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = billie/billie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"billie/Preview Content\"";
-				DEVELOPMENT_TEAM = LL57B8LDN4;
+				DEVELOPMENT_TEAM = 3S22856DS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -670,7 +674,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = appledeveloperacademy.billie;
+				PRODUCT_BUNDLE_IDENTIFIER = app.billie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
